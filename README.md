@@ -130,11 +130,6 @@ During boot it shows WiFi and MQTT connection progress.
 esp-8266-temp-hum/
 ├── espSensor.ino   # Main firmware
 ├── secrets.h       # ⚠️ Create manually (see Configuration)
+├── LICENSE          # CC0 1.0 Universal
 └── .gitignore
 ```
-
----
-
-## License
-
-DIY project, free to use. No warranties.
