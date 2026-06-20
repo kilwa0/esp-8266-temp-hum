@@ -5,6 +5,8 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
+#include "secrets.h"
+
 #define DHTPIN D5
 #define DHTTYPE DHT11
 
@@ -13,13 +15,13 @@
 #define OLED_RESET -1
 #define SCREEN_ADDRESS 0x3C
 
-const char* ssid = "Ranita";
-const char* password = "k1lw4c3r0wl4n!";
+const char* ssid = WIFI_SSID;
+const char* password = WIFI_PASSWORD;
 
-const char* mqtt_server = "192.168.2.40";
-const int mqtt_port = 1883;
-const char* mqtt_user = "mq";
-const char* mqtt_password = "melon";
+const char* mqtt_server = MQTT_BROKER;
+const int mqtt_port = MQTT_PORT;
+const char* mqtt_user = MQTT_USER;
+const char* mqtt_password = MQTT_PASSWORD;
 
 const char* topic_temp = "home/Despacho_1/temperatura";
 const char* topic_hum  = "home/Despacho_1/humedad";
